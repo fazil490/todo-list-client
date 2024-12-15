@@ -8,7 +8,7 @@ const TodoApp = () => {
   const [currentTodo, setCurrentTodo] = useState(null);
   const [error, setError] = useState("");
   const [message, setMessage] = useState("");
-  const apiUrl = "http://localhost:7000/api/todo";
+  const apiUrl = process.env.API_URL
 
   console.log(todos);
 
